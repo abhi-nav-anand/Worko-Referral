@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
+  /* Soft blue to teal gradient */
+}
+
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #1e293b;
+  background: none;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 600;
+  color: #6366f1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #0ea5e9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  color: #1e40af;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background: linear-gradient(90deg, #6366f1 0%, #0ea5e9 100%);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(99,102,241,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, #0ea5e9 0%, #6366f1 100%);
+  box-shadow: 0 4px 16px 0 rgba(14,165,233,0.12);
+}
+button:focus,
+button:focus-visible {
+  outline: 3px solid #6366f1;
+}
+
+.card, .bg-white {
+  background: linear-gradient(135deg, #fff 60%, #e0e7ff 100%);
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 16px 0 rgba(99,102,241,0.08);
+}
+
+@media (max-width: 768px) {
+  #root {
+    min-width: 100vw;
+    padding: 0;
+  }
+  .card, .bg-white {
+    border-radius: 0.75rem;
+    padding: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1e293b;
+    background: none;
+  }
+  a:hover {
+    color: #6366f1;
+  }
+  button {
+    background: linear-gradient(90deg, #6366f1 0%, #0ea5e9 100%);
+    color: #fff;
+  }
+}
