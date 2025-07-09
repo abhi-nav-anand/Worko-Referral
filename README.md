@@ -86,7 +86,7 @@ Worko is a modern job referral platform that connects job seekers and referrers,
 
 ## Deployment
 
-- **Backend:** Deploy to [Render]((https://worko-backend-1-7r3k.onrender.com)), Heroku, or any Node.js hosting. Set environment variables in your dashboard.
+- **Backend:** Deploy to [Render](https://worko-backend-1-7r3k.onrender.com), Heroku, or any Node.js hosting. Set environment variables in your dashboard.
 - **Frontend:** Deploy to [Netlify](https://worko-ref.netlify.app/), Netlify, or similar. Set `VITE_API_BASE_URL` to your deployed backend URL.
 
 ---
